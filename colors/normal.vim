@@ -18,3 +18,7 @@ hi Identifier guifg=black
 hi pythonBuiltin gui=bold
 hi Visual guibg=#ccccff
 hi ColorColumn guibg=#eeeeee
+
+hi ShowMarksHLl guifg=#990000 guibg=#cccccc
+hi ShowMarksHLo guifg=#999900 guibg=#cccccc
+

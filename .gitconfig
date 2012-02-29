@@ -1,0 +1,39 @@
+[color]
+diff = auto
+status = auto
+branch = auto
+interactive = auto
+ui = true
+pager = true
+
+[color "diff"]
+meta = yellow ul
+frag = white
+new = green
+old = red
+whitespace = white reverse
+
+[pager]
+log = true
+diff = false
+
+[user]
+email = kennytm@gmail.com
+name = KennyTM~
+
+[alias]
+st = status
+ci = commit
+di = diff
+rv = checkout --
+br = branch
+co = checkout
+lg = log --oneline --graph
+
+[core]
+editor = gvim -f
+autocrlf = input
+
+[grep]
+linenumber = true
+

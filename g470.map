@@ -1,0 +1,14 @@
+keymaps 0
+
+include "/usr/share/kbd/keymaps/i386/qwerty/us.map.gz"
+
+keycode 58 = Control
+keycode 99 = Remove
+keycode 102 = Delete
+keycode 109 = Find
+keycode 104 = Return
+keycode 70 = Next
+keycode 102 = Delete
+keycode 119 = Prior
+keycode 100 = Compose
+

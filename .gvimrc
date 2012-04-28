@@ -32,6 +32,7 @@ nnoremap <C-F> :promptfind<CR>
 nnoremap <C-H> :promptrepl<CR>
 
 vnoremap <C-Z> <Esc>u
+snoremap m m
 
 " Automatically cd into the directory that the file is in
 autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')

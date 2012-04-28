@@ -33,6 +33,9 @@ au FileType make set noexpandtab
 au BufNewFile,BufRead *.cpp set syntax=cpp11
 au BufNewFile,BufRead *.hpp set syntax=cpp11
 
+" Mozart/Oz
+au BufNewFile,BufRead *.oz set syntax=oz
+
 let g:showmarks_enable=1
 let g:showmarks_include=".'abcdefghijklmnopqrstuvwxyz"
 let g:showmarks_textlower="'\t"

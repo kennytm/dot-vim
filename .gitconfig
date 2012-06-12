@@ -29,6 +29,7 @@ rv = checkout --
 br = branch
 co = checkout
 lg = log --oneline --graph
+mt = mergetool -t meld1234
 
 [core]
 editor = gvim -f
@@ -37,3 +38,9 @@ autocrlf = input
 [grep]
 linenumber = true
 
+[mergetool]
+tool = meld1234
+keepBackup = false
+
+[mergetool "meld1234"]
+cmd = meld --diff $LOCAL $BASE --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE

@@ -17,6 +17,7 @@ set incsearch
 set hlsearch
 set nohidden
 set nowrap
+set autochdir
 
 set colorcolumn=80,120
 
@@ -31,7 +32,9 @@ au FileType make set noexpandtab
 
 " Switch on C++11
 au BufNewFile,BufRead *.cpp set syntax=cpp11
+au BufNewFile,BufRead *.cc set syntax=cpp11
 au BufNewFile,BufRead *.hpp set syntax=cpp11
+au BufNewFile,BufRead *.hh set syntax=cpp11
 
 " Mozart/Oz
 au BufNewFile,BufRead *.oz set syntax=oz

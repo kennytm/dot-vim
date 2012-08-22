@@ -86,7 +86,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1
-source /usr/share/git/completion/git-completion.bash
+source /usr/share/git/git-prompt.sh
 
 export PS1='\n\[\e[47m\]\w\[\e[34m\]$(__git_ps1)\[\e[30m\]:\[\e[31m\]\#\[\e[1;30m\]\$\[\e[0m\] '
 set -o ignoreeof

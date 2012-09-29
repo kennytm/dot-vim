@@ -87,6 +87,7 @@ fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 source /usr/share/git/git-prompt.sh
+source /usr/share/git/completion/git-completion.bash
 
 export PS1='\n\[\e[47m\]\w\[\e[34m\]$(__git_ps1)\[\e[30m\]:\[\e[31m\]\#\[\e[1;30m\]\$\[\e[0m\] '
 set -o ignoreeof
@@ -98,4 +99,12 @@ export PYTHONSTARTUP=~/.python
 alias skype='xhost +local: && su skype -c skype'
 
 export EDITOR=nano
+
+case "$TERM" in
+    xterm*|rxvt*)
+        PS1='\[\e]0;$(basename \w) (\w, \u@\h)\a\]'$PS1
+        ;;
+    *)
+        ;;
+esac
 

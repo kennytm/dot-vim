@@ -102,7 +102,7 @@ export EDITOR=nano
 
 case "$TERM" in
     xterm*|rxvt*)
-        PS1='\[\e]0;$(basename \w) (\w, \u@\h)\a\]'$PS1
+        PS1='\[\e]0;$(basename "\w") (\w, \u@\h)\a\]'$PS1
         ;;
     *)
         ;;

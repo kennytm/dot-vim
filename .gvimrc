@@ -34,6 +34,12 @@ nnoremap <C-H> :promptrepl<CR>
 vnoremap <C-Z> <Esc>u
 snoremap m m
 
+" OS X key settings.
+map <S-D-Left> <S-Home>
+map <S-D-Right> <S-End>
+map <S-D-Up> <S-C-Home>
+map <S-D-Down> <S-C-End>
+
 " Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 

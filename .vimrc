@@ -19,6 +19,10 @@ set nohidden
 set nowrap
 set autochdir
 
+" Show tab explicitly
+set listchars=tab:>-
+set list
+
 set colorcolumn=80,120
 
 let g:clipbrdDefaultReg = '+'

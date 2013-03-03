@@ -14,3 +14,4 @@ else
     alias ls='ls -CFG'
 fi
 
+alias dsm='objdump -d -C -Mintel'

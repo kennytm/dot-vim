@@ -1,7 +1,7 @@
 if [ -r ~/.profile ]; then . ~/.profile; fi
 case "$-" in *i*) if [ -r ~/.bashrc ]; then . ~/.bashrc; fi;; esac
 
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
 

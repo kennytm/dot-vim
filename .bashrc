@@ -71,7 +71,17 @@ esac
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+if hash notify-send 2> /dev/null; then
+    alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+else
+    alert() {
+        if [ "$#" -ge 1 ]; then
+            terminal-notifier -message $@ -title "$(basename $(pwd))"
+        else
+            terminal-notifier -message "done" -title "$(basename $(pwd))"
+        fi
+    }
+fi
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

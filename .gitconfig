@@ -43,4 +43,7 @@ tool = meld1234
 keepBackup = false
 
 [mergetool "meld1234"]
-cmd = meld --diff $LOCAL $BASE --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
+cmd = meld --diff $LOCAL $MERGED $REMOTE
+
+[gui]
+fontdiff = -family Menlo -size 11 -weight normal -slant roman -underline 0 -overstrike 0

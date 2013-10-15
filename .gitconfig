@@ -30,6 +30,9 @@ br = branch
 co = checkout
 lg = log --oneline --graph
 mt = mergetool -t meld1234
+hd = log -1 --stat
+con = rebase --continue
+amend = commit -a --amend --no-edit
 
 [core]
 editor = gvim -f

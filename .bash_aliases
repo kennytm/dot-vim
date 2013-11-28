@@ -15,3 +15,6 @@ else
 fi
 
 alias dsm='objdump -d -C -Mintel'
+
+# Pygmentize
+alias ccat="python3 -c 'import pygments.cmdline;pygments.cmdline.main()'"

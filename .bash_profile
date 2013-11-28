@@ -3,7 +3,7 @@ case "$-" in *i*) if [ -r ~/.bashrc ]; then . ~/.bashrc; fi;; esac
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
+#export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
 
 # export GTK2_RC_FILES=/usr/local/share/themes/Clearlooks/gtk-2.0/gtkrc
 export GTK_PATH=/usr/local/lib/gtk-2.0

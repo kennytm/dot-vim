@@ -2,8 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-if [ -d ~/XCodeProjects/mozart/install/bin ]; then
-    export PATH=~/XCodeProjects/mozart/install/bin:$PATH
+if [ -d ./XCodeProjects/mozart/install/bin ]; then
+    export PATH=`abspath ~/XCodeProjects/mozart/install/bin`:$PATH
 fi
 
 # If not running interactively, don't do anything
@@ -104,11 +104,15 @@ if [ -f /usr/share/git/git-prompt.sh ]; then
     source /usr/share/git/git-prompt.sh
 elif [ -f /usr/share/git-core/git-prompt.sh ]; then
     source /usr/share/git-core/git-prompt.sh
+elif [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+    source /usr/local/etc/bash_completion.d/git-prompt.sh
 fi
 if [ -f /usr/share/git/completion/git-completion.bash ]; then
     source /usr/share/git/completion/git-completion.bash
 elif [ -f /usr/share/git-core/git-completion.bash ]; then
     source /usr/share/git-core/git-completion.bash
+elif [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+    source /usr/local/etc/bash_completion.d/git-completion.bash
 fi
 
 export PS1='\n\[\e[47m\]\w\[\e[34m\]$(__git_ps1)\[\e[30m\]:\[\e[31m\]\#\[\e[1;30m\]\$\[\e[0m\] '
